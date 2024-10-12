@@ -12,3 +12,26 @@
 .button_1:hover {
     background-color: #272727; /* Зміна кольору при наведенні */
 }
+
+.pricing {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.pricing__amount {
+    font-size: 64px; /* Великий розмір числа */
+    font-weight: bold;
+    line-height: 1;
+}
+
+.pricing__currency {
+    font-size: 24px; /* Менший розмір для символу валюти */
+    vertical-align: super; /* Вирівнювання зверху */
+}
+
+.pricing__period {
+    display: block;
+    font-size: 16px; /* Маленький текст під цифрою */
+    color: gray;
+    margin-top: 5px;
+}

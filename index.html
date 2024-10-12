@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CatPhotoApp</title>
     <link rel="icon" href="img/cat_smirk.png" type="image/x-icon" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
     <style>
       .container {
         width: 80%;
@@ -19,7 +19,8 @@
       <div class="promo-offers__container">
         <article class="promo-shipping__article">
           <!-- тут легенда-->
-          <button onclick="window.location.href='about.html'"
+          <button
+            onclick="window.location.href='about.html'"
             type="submit"
             class="promo-shipping__button"
             aria-label="Learn more about delivery"
@@ -27,6 +28,11 @@
             About Delivery
           </button>
         </article>
+      </div>
+      <div class="pricing">
+        <span class="pricing__amount">99</span>
+        <span class="pricing__currency">$</span>
+        <span class="pricing__period">Per Month</span>
       </div>
     </section>
     <hr />
@@ -163,9 +169,9 @@
           <button type="submit">Submit</button>
         </form>
       </section>
-<div>
-  <a href="#header-section" class="button_1" id="myButton">Learn More</a>
-</div>
+      <div>
+        <a href="#header-section" class="button_1" id="myButton">Learn More</a>
+      </div>
     </main>
     <footer>
       <p>
@@ -175,9 +181,11 @@
     </footer>
     <script>
       // JavaScript код, який додає просту подію натискання на кнопку
-      document.getElementById("myButton").addEventListener("click", function() {
+      document
+        .getElementById("myButton")
+        .addEventListener("click", function () {
           alert("Button clicked!");
-      });
-  </script>
+        });
+    </script>
   </body>
-  </html>
+</html>
