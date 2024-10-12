@@ -164,9 +164,8 @@
         </form>
       </section>
 <div>
-  <a href="#header-section" class="button_1">Learn More</a>
+  <a href="#header-section" class="button_1" id="myButton">Learn More</a>
 </div>
-
     </main>
     <footer>
       <p>
@@ -174,5 +173,11 @@
         <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
       </p>
     </footer>
+    <script>
+      // JavaScript код, який додає просту подію натискання на кнопку
+      document.getElementById("myButton").addEventListener("click", function() {
+          alert("Button clicked!");
+      });
+  </script>
   </body>
-</html>
+  </html>

@@ -1,7 +1,7 @@
 .button_1 {
     display: inline-block; /* Дозволяє задати розміри */
     padding: 10px 20px; /* Внутрішні відступи для вигляду кнопки */
-    background-color: #4CAF50; /* Колір фону кнопки */
+    background-color:#FF7B16; /* Колір фону кнопки */
     color: white; /* Колір тексту */
     text-align: center; /* Вирівнювання тексту */
     text-decoration: none; /* Вимикає підкреслення тексту */
@@ -10,5 +10,5 @@
 }
 
 .button_1:hover {
-    background-color: #45a049; /* Зміна кольору при наведенні */
+    background-color: #272727; /* Зміна кольору при наведенні */
 }
