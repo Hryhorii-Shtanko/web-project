@@ -4,13 +4,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doc</title>
+    <title>Document</title>
     <link rel="icon" href="img/cat_smirk.png" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <section class="promo-offers">
+      <div class="promo-offers__container">
+        <article class="promo-shipping__article">
+          <h2 class="promo-shipping__heading">
+            Free shipping on orders
+            <span class="promo-shipping__highlight">$100+</span>
+          </h2>
+          <p class="promo-shipping__description">
+            Get advantage of our quick delivery to your door!
+          </p>
+          <ul class="promo-shipping__features">
+            <li><em>Free delivery applies to standard shipping;</em></li>
+            <li><em>Get your items delivered straight to your door;</em></li>
+            <li><em>Transparent and straightforward shipping terms;</em></li>
+            <li><em>Specialty items may not qualify for free shipping.</em></li>
+          </ul>
+          <a
+            href="contacts.html"
+            class="promo-shipping__button"
+            aria-label="Learn more about delivery"
+          >
+            About Delivery
+          </a>
+        </article>
 
-    <article class="promo-shipping__article">
+        <aside class="promo-product-offer__aside">
+          <h2 class="promo-product-offer__title">
+            AirPulse <span class="promo-product-offer__highlight">R255 X</span
+            ><br />
+            Wireless
+          </h2>
+          <p class="promo-product-offer__price">
+            <span class="promo-product-offer__old-price">$240.00</span>
+            <span class="promo-product-offer__new-price">$185.00</span>
+          </p>
+          <p class="promo-product-offer__promo-info">
+            <em>* Promo price until 30 November, 2024</em>
+          </p>
+          <a
+            href="#"
+            class="promo-product-offer__button"
+            aria-label="This button will take you back to the top"
+            onclick="window.scrollTo(0, 0); return false;"
+            >Learn More</a
+          >
+        </aside>
+      </div>
+    </section>
+
+    <div class="promo-shipping__div">
       <!-- тут легенда-->
       <button
         onclick="window.location.href='about.html'"
@@ -20,6 +68,6 @@
       >
         About Delivery
       </button>
-    </article>
+    </div>
   </body>
 </html>
