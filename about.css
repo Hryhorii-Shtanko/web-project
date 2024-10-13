@@ -1,0 +1,31 @@
+.pricing {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .pricing__amount-wrapper {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem; /* Задайте потрібний розмір для числа */
+  }
+  
+  .pricing__amount {
+    font-family: 'Nunito', sans-serif;
+    font-size: 3rem; /* Розмір для числа 99 */
+    font-weight: bold;
+  }
+  
+  .pricing__currency {
+    position: absolute;
+    top: -10px; /* Регулюйте для точного вирівнювання */
+    right: -10px; /* Точне вирівнювання відносно числа */
+    font-size: 1rem;
+  }
+  
+  .pricing__period {
+    display: block;
+    font-size: 1rem; /* Розмір для тексту "Per Month" */
+    color: grey;
+  }
+  
+/*====+++++++++++++++*/

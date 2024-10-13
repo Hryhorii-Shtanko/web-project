@@ -1,50 +1,43 @@
-.button_1,
-.promo-shipping__button {
+.promo-offers
+{font-family: 'Nunito', sans-serif;}
+
+
+.promo-shipping__button,
+.promo-product-offer__button {
     display: inline-block; /* Дозволяє задати розміри */
-    padding: 10px 20px; /* Внутрішні відступи для вигляду кнопки */
+    padding: 10px 20px; /* ??? */
     background-color:#FF7B16; /* Колір фону кнопки */
     color: white; /* Колір тексту */
     text-align: center; /* Вирівнювання тексту */
     text-decoration: none; /* Вимикає підкреслення тексту */
     border-radius: 5px; /* Закруглені кути */
-    font-size: 16px; /* Розмір шрифту */
+    font-size: 13px; /* Розмір шрифту */
 }
 
-.button_1:hover,
 .promo-shipping__button:hover {
     background-color: #272727; /* Зміна кольору при наведенні */
 }
-
-.pricing {
-    font-family: Arial, sans-serif;
-    text-align: center;
+.promo-product-offer__button:hover {
+    background-color: #fff;
+    /* Зміна кольору при наведенні */
 }
 
-.pricing__amount {
-    font-size: 64px; /* Великий розмір числа */
-    font-weight: bold;
-    line-height: 1;
-}
-
-.pricing__currency {
-    font-size: 24px; /* Менший розмір для символу валюти */
-    vertical-align: super; /* Вирівнювання зверху */
-}
-
-.pricing__period {
-    display: block;
-    font-size: 16px; /* Маленький текст під цифрою */
-    color: gray;
-    margin-top: 5px;
-}
 /*  відступи*/
 .promo-shipping__article,
 .promo-product-offer__aside {
   display: inline-block; /* Для розміщення блоків поруч */
   vertical-align: top; /* Вирівнювання по верху */
   width: 48%; /* Ширина елементів, щоб вони поміщалися поруч */
-  padding-left: 22px; /* Відступ зліва 6 мм (22 пікселі) */
-  padding-right: 29px; /* Відступ справа 8 мм (29 пікселів) */
+
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
+.promo-shipping__article
+{padding-left: 22px; /* Відступ зліва 6 мм (22 пікселі) */
+    padding-right: 29px; /* Відступ справа 8 мм (29 пікселів) */
+}
+.promo-product-offer__aside {
+    padding-right: 22px; 
 }
 
 .promo-product-offer__aside {
