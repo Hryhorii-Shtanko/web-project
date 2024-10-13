@@ -1,25 +1,25 @@
-.promo-offers
-{font-family: 'Nunito', sans-serif;}
-
+.promo-offers {
+  font-family: "Nunito", sans-serif;
+}
 
 .promo-shipping__button,
 .promo-product-offer__button {
-    display: inline-block; /* Дозволяє задати розміри */
-    padding: 10px 20px; /* ??? */
-    background-color:#FF7B16; /* Колір фону кнопки */
-    color: white; /* Колір тексту */
-    text-align: center; /* Вирівнювання тексту */
-    text-decoration: none; /* Вимикає підкреслення тексту */
-    border-radius: 5px; /* Закруглені кути */
-    font-size: 13px; /* Розмір шрифту */
+  display: inline-block; /* Дозволяє задати розміри */
+  padding: 10px 20px; /* ??? */
+  background-color: #ff7b16; /* Колір фону кнопки */
+  color: white; /* Колір тексту */
+  text-align: center; /* Вирівнювання тексту */
+  text-decoration: none; /* Вимикає підкреслення тексту */
+  border-radius: 5px; /* Закруглені кути */
+  font-size: 13px; /* Розмір шрифту */
 }
 
 .promo-shipping__button:hover {
-    background-color: #272727; /* Зміна кольору при наведенні */
+  background-color: #272727; /* Зміна кольору при наведенні */
 }
 .promo-product-offer__button:hover {
-    background-color: #fff;
-    /* Зміна кольору при наведенні */
+  background-color: #fff;
+  color: #323232;
 }
 
 /*  відступи*/
@@ -32,25 +32,24 @@
   padding-top: 29px;
   padding-bottom: 29px;
 }
-.promo-shipping__article
-{padding-left: 22px; /* Відступ зліва 6 мм (22 пікселі) */
-    padding-right: 29px; /* Відступ справа 8 мм (29 пікселів) */
+.promo-shipping__article {
+  padding-left: 22px; /* Відступ зліва 6 мм (22 пікселі) */
+  padding-right: 29px; /* Відступ справа 8 мм (29 пікселів) */
 }
 .promo-product-offer__aside {
-    padding-right: 22px; 
+  padding-right: 22px;
 }
 
 .promo-product-offer__aside {
   width: 48%; /* Також можна змінити, залежно від необхідного дизайну */
 }
 .promo-offers__container {
-    display: flex;
-    justify-content: space-between; /* Якщо хочете, щоб між елементами був простір */
-  }
-  
-  .promo-shipping__article,
-  .promo-product-offer__aside {
-    flex: 1; /* Якщо потрібно, щоб обидва елементи займали однакову ширину */
-    margin: 0 10px; /* Можна додати відступ між елементами */
-  }
-  
+  display: flex;
+  justify-content: space-between; /* Якщо хочете, щоб між елементами був простір */
+}
+
+.promo-shipping__article,
+.promo-product-offer__aside {
+  flex: 1; /* Якщо потрібно, щоб обидва елементи займали однакову ширину */
+  margin: 0 10px; /* Можна додати відступ між елементами */
+}
