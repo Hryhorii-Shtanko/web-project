@@ -35,3 +35,16 @@
     color: gray;
     margin-top: 5px;
 }
+/* я заставив зробити чат прав. відступи*/
+.promo-shipping__article,
+.promo-product-offer__aside {
+  display: inline-block; /* Для розміщення блоків поруч */
+  vertical-align: top; /* Вирівнювання по верху */
+  width: 48%; /* Ширина елементів, щоб вони поміщалися поруч */
+  padding-left: 22px; /* Відступ зліва 6 мм (22 пікселі) */
+  padding-right: 29px; /* Відступ справа 8 мм (29 пікселів) */
+}
+
+.promo-product-offer__aside {
+  width: 48%; /* Також можна змінити, залежно від необхідного дизайну */
+}
