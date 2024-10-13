@@ -4,188 +4,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CatPhotoApp</title>
+    <title>Doc</title>
     <link rel="icon" href="img/cat_smirk.png" type="image/x-icon" />
-    <link rel="stylesheet" href="index.css">
-    <style>
-      .container {
-        width: 80%;
-        margin: 0 auto;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section class="promo-offers">
-      <div class="promo-offers__container">
-        <article class="promo-shipping__article">
-          <!-- тут легенда-->
-          <button
-            onclick="window.location.href='about.html'"
-            type="submit"
-            class="button_1"
-            aria-label="Learn more about delivery"
-          >
-            About Delivery
-          </button>
-        </article>
-      </div>
-      <div class="pricing">
-        <span class="pricing__amount">99</span>
-        <span class="pricing__currency">$</span>
-        <span class="pricing__period">Per Month</span>
-      </div>
-    </section>
-    <hr />
 
-    <section class="promo-shipping">
-      <h2>
-        Спеціальна доставка<span class="promo-banner__highlight">$100+</span>
-      </h2>
-      <p>Get advantage of our quick delivery to your door!</p>
-      <ul class="promo-banner__features">
-        <li><em>Free delivery applies to standard shipping;</em></li>
-        <li><em>Get your items delivered straight to your door;</em></li>
-        <li><em>Transparent and straightforward shipping terms;</em></li>
-        <li><em>Specialty items may not qualify for free shipping.</em></li>
-      </ul>
-      <a href="delivery.html" class="promo-banner__button">About Delivery</a>
-      <!--        <div class="f">
-            <article class="image">
-<img src="" alt="">
-            </article>
-        </div> -->
-    </section>
-    <section class="promo-banner__product-offer">
-      <h2 class="promo-banner__product-title">
-        AirPulse
-        <span class="promo-banner__product-highlight">R255 X Wireless</span>
-      </h2>
-      <p class="promo-banner__price">
-        <span class="promo-banner__old-price">$240.00</span>
-        <span class="promo-banner__new-price">$185.00</span>
-      </p>
-      <p class="promo-banner__promo-info">
-        * Promo price until 30 November, 2024
-      </p>
-      <a href="product.html" class="promo-banner__button">Learn More</a>
-    </section>
-
-    <main>
-      <h1>CatPhotoApp</h1>
-      <section>
-        <h2>Cat Photos</h2>
-        <!-- TODO: Add link to cat photos -->
-        <p>
-          See more
-          <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>
-          in our gallery.
-        </p>
-        <a href="https://freecatphotoapp.com"
-          ><img
-            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-            alt="A cute orange cat lying on its back."
-        /></a>
-      </section>
-      <section>
-        <h2>Cat Lists</h2>
-        <h3>Things cats love:</h3>
-        <ul>
-          <li>cat nip</li>
-          <li>laser pointers</li>
-          <li>lasagna</li>
-        </ul>
-        <figure>
-          <img
-            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
-            alt="A slice of lasagna on a plate."
-          />
-          <figcaption>Cats <em>love</em> lasagna.</figcaption>
-        </figure>
-        <h3>Top 3 things cats hate:</h3>
-        <ol>
-          <li>flea treatment</li>
-          <li>thunder</li>
-          <li>other cats</li>
-        </ol>
-        <figure>
-          <img
-            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
-            alt="Five cats looking around a field."
-          />
-          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
-        </figure>
-      </section>
-      <section>
-        <h2>Cat Form</h2>
-        <form action="https://freecatphotoapp.com/submit-cat-photo">
-          <fieldset>
-            <legend>Is your cat an indoor or outdoor cat?</legend>
-            <label
-              ><input
-                id="indoor"
-                type="radio"
-                name="indoor-outdoor"
-                value="indoor"
-                checked
-              />
-              Indoor</label
-            >
-            <label
-              ><input
-                id="outdoor"
-                type="radio"
-                name="indoor-outdoor"
-                value="outdoor"
-              />
-              Outdoor</label
-            >
-          </fieldset>
-          <fieldset>
-            <legend>What's your cat's personality?</legend>
-            <input
-              id="loving"
-              type="checkbox"
-              name="personality"
-              value="loving"
-              checked
-            />
-            <label for="loving">Loving</label>
-            <input id="lazy" type="checkbox" name="personality" value="lazy" />
-            <label for="lazy">Lazy</label>
-            <input
-              id="energetic"
-              type="checkbox"
-              name="personality"
-              value="energetic"
-            />
-            <label for="energetic">Energetic</label>
-          </fieldset>
-          <input
-            type="text"
-            name="catphotourl"
-            placeholder="cat photo URL"
-            required
-          />
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-      <div>
-        <a href="#header-section" class="button_1" id="myButton">Learn More</a>
-      </div>
-    </main>
-    <footer>
-      <p>
-        No Copyright -
-        <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
-      </p>
-    </footer>
-    <script>
-      // JavaScript код, який додає просту подію натискання на кнопку
-      document
-        .getElementById("myButton")
-        .addEventListener("click", function () {
-          alert("Button clicked!");
-        });
-    </script>
+    <article class="promo-shipping__article">
+      <!-- тут легенда-->
+      <button
+        onclick="window.location.href='about.html'"
+        type="submit"
+        class="button_1"
+        aria-label="Learn more about delivery"
+      >
+        About Delivery
+      </button>
+    </article>
   </body>
 </html>
