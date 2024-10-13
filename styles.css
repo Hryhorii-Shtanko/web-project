@@ -1,4 +1,5 @@
-.button_1 {
+.button_1,
+.promo-shipping__button {
     display: inline-block; /* Дозволяє задати розміри */
     padding: 10px 20px; /* Внутрішні відступи для вигляду кнопки */
     background-color:#FF7B16; /* Колір фону кнопки */
@@ -9,7 +10,8 @@
     font-size: 16px; /* Розмір шрифту */
 }
 
-.button_1:hover {
+.button_1:hover,
+.promo-shipping__button:hover {
     background-color: #272727; /* Зміна кольору при наведенні */
 }
 
@@ -35,7 +37,7 @@
     color: gray;
     margin-top: 5px;
 }
-/* я заставив зробити чат прав. відступи*/
+/*  відступи*/
 .promo-shipping__article,
 .promo-product-offer__aside {
   display: inline-block; /* Для розміщення блоків поруч */
@@ -48,3 +50,14 @@
 .promo-product-offer__aside {
   width: 48%; /* Також можна змінити, залежно від необхідного дизайну */
 }
+.promo-offers__container {
+    display: flex;
+    justify-content: space-between; /* Якщо хочете, щоб між елементами був простір */
+  }
+  
+  .promo-shipping__article,
+  .promo-product-offer__aside {
+    flex: 1; /* Якщо потрібно, щоб обидва елементи займали однакову ширину */
+    margin: 0 10px; /* Можна додати відступ між елементами */
+  }
+  
