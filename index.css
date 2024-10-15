@@ -77,3 +77,56 @@ font-size: 11.5px;
 .promo-shipping__features{
   font-size: 11.5px;
 }
+/* Основні стилі для великих екранів */
+.promo-shipping__article,
+.promo-product-offer__aside {
+    width: 48%; /* Блоки мають займати 48% ширини для великих екранів */
+    padding: 20px; /* Загальні відступи */
+    margin: 0 10px; /* Відступ між елементами */
+}
+
+/* Стилі для мобільних пристроїв (max-width: 768px) */
+@media (max-width: 768px) {
+    .promo-shipping__article,
+    .promo-product-offer__aside {
+        width: 100%; /* Ширина 100% для мобільних пристроїв */
+        padding: 10px; /* Зменшені відступи */
+    }
+
+    /* Вирівнювання в колонки */
+    .promo-offers__container {
+        flex-direction: column; /* Вирівнюємо блоки вертикально на малих екранах */
+        align-items: flex-start; /* Вирівнювання по лівій стороні */
+    }
+}
+
+/* Стилі для дуже маленьких екранів (max-width: 480px) */
+@media (max-width: 480px) {
+    .promo-shipping__article,
+    .promo-product-offer__aside {
+        padding: 5px; /* Зменшені відступи для маленьких екранів */
+        font-size: 14px; /* Зменшення розміру шрифту */
+    }
+
+    /* Стилі для кнопок */
+    .promo-shipping__button,
+    .promo-product-offer__button {
+        padding: 8px 15px; /* Зменшені розміри кнопок */
+        font-size: 12px; /* Менший розмір шрифту для кнопок */
+    }
+}
+
+/* Контейнер для двох блоків */
+.promo-offers__container {
+    display: flex;
+    justify-content: space-between; /* Простір між блоками */
+    align-items: center; /* Вирівнювання по вертикалі */
+    flex-wrap: wrap; /* Блоки переходять на новий ряд на маленьких екранах */
+}
+
+/* Центрування для мобільних пристроїв */
+@media (max-width: 768px) {
+    .promo-offers__container {
+        flex-direction: column; /* Вирівнювання блоків один під одним */
+    }
+}
