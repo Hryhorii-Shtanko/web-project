@@ -130,3 +130,7 @@ font-size: 11.5px;
         flex-direction: column; /* Вирівнювання блоків один під одним */
     }
 }
+.promo-shipping__article,
+.promo-product-offer__aside
+{backbackground-image: url('/img/playing_room.png');
+  }
