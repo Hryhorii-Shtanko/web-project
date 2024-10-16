@@ -86,7 +86,7 @@ font-size: 11.5px;
 }
 
 .promo-shipping__article {
-  backbackground-image: url('img/playing_room.png');
+   background-image: url('img/playing_room.png');
   }
 
 /* Стилі для мобільних пристроїв (max-width: 768px) */
