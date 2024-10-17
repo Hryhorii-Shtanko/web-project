@@ -90,7 +90,7 @@ font-size: 11.5px;
   background-size: cover; /* картинка покриє всю площу */
   background-position: center; /* розташування по центру */
   background-repeat: no-repeat; /* картинка не повторюється */
-   background-size: 200% 100%;
+/*    background-size: 200% 100%; */
    border-radius: 5px; 
 }
 .promo-shipping__features li::marker {
@@ -143,3 +143,20 @@ font-size: 11.5px;
         flex-direction: column; /* Вирівнювання блоків один під одним */
     }
 }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding:0;
+}
+.promo-shipping__article,
+.promo-product-offer__aside {
+    margin: 29 0px; /* Відступ між елементами */
+}
+.promo-shipping__article {
+  margin-left: 22px;
+    margin-right: 29px;
+}
+.promo-product-offer__aside {
+      margin-right: 22px;
+}  
