@@ -87,8 +87,11 @@ font-size: 11.5px;
 
 .promo-shipping__article {
    background-image: url('img/playing_room.png');
-  width: 50%;
-  }
+  background-size: cover; /* картинка покриє всю площу */
+  background-position: center; /* розташування по центру */
+  background-repeat: no-repeat; /* картинка не повторюється */
+}
+
 
 /* Стилі для мобільних пристроїв (max-width: 768px) */
 @media (max-width: 768px) {
