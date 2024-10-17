@@ -143,15 +143,17 @@ font-size: 11.5px;
         flex-direction: column; /* Вирівнювання блоків один під одним */
     }
 }
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding:0;
+    box-sizing: border-box;
 }
 .promo-shipping__article,
 .promo-product-offer__aside {
-    margin: 29 0px; /* Відступ між елементами */
+    margin: 29px 0; /* Відступ між елементами */
 }
 .promo-shipping__article {
   margin-left: 22px;
