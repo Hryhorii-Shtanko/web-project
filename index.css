@@ -169,10 +169,8 @@ padding-bottom: 30px;
   .promo-shipping__article,
   .promo-product-offer__aside {
     width: 100%; /* Ширина 100%, щоб блоки стали один під одним */
-  }
+/*  }
 
   .promo-offers__container {
     flex-direction: column; /* Вирівнюємо блоки один під одним */
-  }
-}
- */
+
