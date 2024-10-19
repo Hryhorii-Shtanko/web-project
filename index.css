@@ -6,6 +6,8 @@
   --btn-primary-alt-hover-color: #fff; /* Колір тексту при ховері */
   --btn-primary-alt-hover-bg-color: #272727; /* Фон при ховері */
   --secondary-color: #ffffff;
+    --border-color: rgb(78 78 78);
+  --primary-text-color: rgb(39, 39, 39);
 }
 
 .promo-offers {
@@ -15,6 +17,8 @@
 /* початок */
 .promo-offers h2 {
   font-size: 1.875rem; /* 30px */
+    color: var(--primary-text-color);
+
 }
 
 .promo-shipping__button,
@@ -22,7 +26,7 @@
   display: inline-block;
   padding: 0.625rem 1.25rem; /* 10px 20px */
   background-color: var(--primary-color);
-  color: var( --secondary-color);
+  color: var(--secondary-color);
   text-align: center;
   text-decoration: none;
   border-radius: 0.3125rem; /* 5px */
@@ -71,6 +75,7 @@
 
 .promo-shipping__description {
   font-size: 1.1875rem; /* 19px */
+  color: var( --border-color);
 }
 
 .promo-shipping__features {
@@ -130,7 +135,7 @@
   border-radius: 0.3125rem; /* 5px */
 }
 .promo-offers{
-padding-top: 15 px;
+padding-top: 15px;
 padding-bottom: 30px;
 }
 .promo-offers__container {
@@ -139,7 +144,7 @@ padding-bottom: 30px;
     align-items: center; /* Вирівнювання по вертикалі */
     flex-wrap: wrap; /* Блоки переходять на новий ряд на маленьких екранах */
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .promo-shipping__article,
   .promo-product-offer__aside {
     width: 100%; /* Ширина 100%, щоб блоки стали один під одним */
