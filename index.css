@@ -8,6 +8,8 @@
   --secondary-color: #ffffff;
     --border-color: rgb(78 78 78);
   --primary-text-color: rgb(39, 39, 39);
+ /*    --text-color: rgb(106, 106, 106); */
+
 }
 
 .promo-offers {
@@ -80,15 +82,15 @@
 
 .promo-shipping__features {
   font-size: 0.875rem; /* 14px */
+    color: var(--static-icon-color); /* Використовуємо змінну для кольору іконок */
+
 }
 
 .promo-shipping__features li::marker {
   color: var(--highlight-color);
 }
 
-.promo-shipping__features {
-  color: var(--static-icon-color); /* Використовуємо змінну для кольору іконок */
-}
+
 
 /* Контейнер для двох блоків */
 .promo-offers__container {
@@ -130,10 +132,21 @@
 .promo-shipping__article {
   background-image: url('img/playing_room.png');
   background-size: cover;
-  background-position: center;
+  background-position: left center;
+    background-size: cover; /* Картинка займає весь блок */
+
   background-repeat: no-repeat;
   border-radius: 0.3125rem; /* 5px */
 }
+.promo-product-offer__aside{
+    background-image: url('img/gray-haired-man-gaming.png');
+  background-size: cover;
+  background-position: left center;
+    background-size: cover; /* Картинка займає весь блок */
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
 .promo-offers{
 padding-top: 15px;
 padding-bottom: 30px;
@@ -143,15 +156,23 @@ padding-bottom: 30px;
     justify-content: space-between; /* Простір між блоками */
     align-items: center; /* Вирівнювання по вертикалі */
     flex-wrap: wrap; /* Блоки переходять на новий ряд на маленьких екранах */
+    flex-direction: column; /* Вирівнюємо блоки один під одним */
+
 }
-@media (max-width: 768px) {
+@media (min-width: 600px) {
+.promo-offers__container{
+   flex-direction: row;
+   justify-content: space-around;
+}
+}
+/* @media (max-width: 768px) {
   .promo-shipping__article,
   .promo-product-offer__aside {
     width: 100%; /* Ширина 100%, щоб блоки стали один під одним */
-    margin: 0 0 10px 0; /* Відступ знизу, щоб блоки не "злипались" */
   }
 
   .promo-offers__container {
     flex-direction: column; /* Вирівнюємо блоки один під одним */
   }
 }
+ */
