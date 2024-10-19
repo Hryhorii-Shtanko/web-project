@@ -24,7 +24,7 @@
   background-color: var(--primary-color);
   color: var( --secondary-color);
   text-align: center;
-/*   text-decoration: none; */
+  text-decoration: none;
   border-radius: 0.3125rem; /* 5px */
   font-size: 0.8125rem; /* 13px */
 }
@@ -129,3 +129,10 @@
   background-repeat: no-repeat;
   border-radius: 0.3125rem; /* 5px */
 }
+.promo-offers{
+padding-top: 15 px;
+padding-bottom: 30px;
+}
+  .promo-offers__container {
+    flex-direction: column; /* Вирівнюємо блоки один під одним */
+  }
