@@ -1,175 +1,131 @@
+:root {
+  --primary-color: #ff7b16;
+  --hover-bg-color: #272727;
+  --highlight-color: #3b82f6;
+  --static-icon-color: #6a6a6a; /* Колір іконок */
+  --btn-primary-alt-hover-color: #fff; /* Колір тексту при ховері */
+  --btn-primary-alt-hover-bg-color: #272727; /* Фон при ховері */
+  --secondary-color: #ffffff;
+}
+
 .promo-offers {
   font-family: "Nunito", sans-serif;
   font-weight: 200;
 }
+/* початок */
 .promo-offers h2 {
-  font-size: 27px;
+  font-size: 1.875rem; /* 30px */
 }
+
 .promo-shipping__button,
 .promo-product-offer__button {
-  display: inline-block; /* Дозволяє задати розміри */
-  padding: 10px 20px; /* ??? */
-  background-color: #ff7b16; /* Колір фону кнопки */
-  color: white; /* Колір тексту */
-  text-align: center; /* Вирівнювання тексту */
-  text-decoration: none; /* Вимикає підкреслення тексту */
-  border-radius: 5px; /* Закруглені кути */
-  font-size: 13px; /* Розмір шрифту */
+  display: inline-block;
+  padding: 0.625rem 1.25rem; /* 10px 20px */
+  background-color: var(--primary-color);
+  color: var( --secondary-color);
+  text-align: center;
+/*   text-decoration: none; */
+  border-radius: 0.3125rem; /* 5px */
+  font-size: 0.8125rem; /* 13px */
 }
 
 .promo-shipping__button:hover {
-  background-color: #272727; /* Зміна кольору при наведенні */
-}
-.promo-product-offer__button:hover {
-  background-color: #fff;
-  color: #323232;
+  background-color: var(--hover-bg-color);
 }
 
-/*  відступи*/
+.promo-product-offer__button:hover {
+  background-color: var(--btn-primary-alt-hover-color);
+  color: var(--btn-primary-alt-hover-bg-color);
+}
+
 .promo-shipping__article,
 .promo-product-offer__aside {
-  display: inline-block; /* Для розміщення блоків поруч */
-  vertical-align: top; /* Вирівнювання по верху */
-  width: 48%; /* Ширина елементів, щоб вони поміщалися поруч */
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+/*   padding: 29px 0; */
+}
 
-  padding-top: 29px;
-  padding-bottom: 29px;
+/* .promo-shipping__article {
+  padding-left: 22px;
+  padding-right: 29px;
 }
-.promo-shipping__article {
-  padding-left: 22px; /* Відступ зліва 6 мм (22 пікселі) */
-  padding-right: 29px; /* Відступ справа 8 мм (29 пікселів) */
-}
+
 .promo-product-offer__aside {
   padding-right: 22px;
-}
+} */
 
-.promo-product-offer__aside {
-  width: 48%; /* Також можна змінити, залежно від необхідного дизайну */
-}
-.promo-offers__container {
-  display: flex;
-  justify-content: space-between; /* Якщо хочете, щоб між елементами був простір */
-}
-
-.promo-shipping__article,
-.promo-product-offer__aside {
-  flex: 1; /* Якщо потрібно, щоб обидва елементи займали однакову ширину */
-  margin: 0 10px; /* Можна додати відступ між елементами */
-}
-
-.promo-product-offer__old-price{
+.promo-product-offer__old-price {
   text-decoration: line-through;
-  font-size: 13px; 
-
-}
-.promo-product-offer__new-price{
-font-size: 17.5px;
-color:  #3b82f6;
+  font-size: 1.0625rem; /* 17px */
 }
 
-.promo-product-offer__promo-info{ 
-/* color: #ffffffd1; */
-font-size: 11.5px;
-}
-.promo-shipping__description{
-  font-size: 14px;
-}
-.promo-shipping__features{
-  font-size: 11.5px;
-}
-/* Основні стилі для великих екранів */
-.promo-shipping__article,
-.promo-product-offer__aside {
-    width: 48%; /* Блоки мають займати 48% ширини для великих екранів */
-/*     padding: 20px; /* Загальні відступи */ */
-/*     margin: 0 10px; /* Відступ між елементами */ */
+.promo-product-offer__new-price {
+  font-size: 1.4375rem; /* 23px */
+  color: var(--highlight-color);
 }
 
-.promo-shipping__article {
-   background-image: url('img/playing_room.png');
-  background-size: cover; /* картинка покриє всю площу */
-  background-position: center; /* розташування по центру */
-  background-repeat: no-repeat; /* картинка не повторюється */
-/*    background-size: 200% 100%; */
-   border-radius: 5px; 
+.promo-product-offer__promo-info {
+  font-size: 0.875rem; /* 14px */
 }
+
+.promo-shipping__description {
+  font-size: 1.1875rem; /* 19px */
+}
+
+.promo-shipping__features {
+  font-size: 0.875rem; /* 14px */
+}
+
 .promo-shipping__features li::marker {
-  color: #3b82f6; /* Колір маркера */
+  color: var(--highlight-color);
 }
 
-
-/* Стилі для мобільних пристроїв (max-width: 768px) */
-@media (max-width: 768px) {
-    .promo-shipping__article,
-    .promo-product-offer__aside {
-        width: 100%; /* Ширина 100% для мобільних пристроїв */
-        padding: 10px; /* Зменшені відступи */
-    }
-
-    /* Вирівнювання в колонки */
-    .promo-offers__container {
-        flex-direction: column; /* Вирівнюємо блоки вертикально на малих екранах */
-        align-items: flex-start; /* Вирівнювання по лівій стороні */
-    }
-}
-
-/* Стилі для дуже маленьких екранів (max-width: 480px) */
-@media (max-width: 480px) {
-    .promo-shipping__article,
-    .promo-product-offer__aside {
-        padding: 5px; /* Зменшені відступи для маленьких екранів */
-        font-size: 14px; /* Зменшення розміру шрифту */
-    }
-
-    /* Стилі для кнопок */
-    .promo-shipping__button,
-    .promo-product-offer__button {
-        padding: 8px 15px; /* Зменшені розміри кнопок */
-        font-size: 12px; /* Менший розмір шрифту для кнопок */
-    }
+.promo-shipping__features {
+  color: var(--static-icon-color); /* Використовуємо змінну для кольору іконок */
 }
 
 /* Контейнер для двох блоків */
 .promo-offers__container {
-    display: flex;
-    justify-content: space-between; /* Простір між блоками */
-    align-items: center; /* Вирівнювання по вертикалі */
-    flex-wrap: wrap; /* Блоки переходять на новий ряд на маленьких екранах */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-/* Центрування для мобільних пристроїв */
+/* Мобільні стилі
 @media (max-width: 768px) {
-    .promo-offers__container {
-        flex-direction: column; /* Вирівнювання блоків один під одним */
-    }
-}
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding:0;
-    box-sizing: border-box;
-}
-/*  .promo-shipping__article,
-.promo-product-offer__aside {
-   margin: 29px 0;  */
-/* }
-.promo-shipping__article {
-  margin-left: 22px;
-    margin-right: 29px;
-}
-.promo-product-offer__aside {
-      margin-right: 22px;
-}   */
-* { margin: 0; padding: 0; }
-.promo-offers {
-  margin: 15px;
-/*   padding:30px 0; */
-}
-  .promo-shipping__article {  padding-right: 8px;
-  }
+  .promo-shipping__article,
   .promo-product-offer__aside {
-        padding-left: 15px;
-}  
-  
+    width: 100%;
+    padding: 10px;
+  }
+
+  .promo-offers__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+} */
+
+/* @media (max-width: 480px) {
+  .promo-shipping__article,
+  .promo-product-offer__aside {
+    padding: 5px;
+    font-size: 0.875rem; 
+  }
+
+  .promo-shipping__button,
+  .promo-product-offer__button {
+    padding: 0.5rem 0.9375rem; 
+    font-size: 0.75rem; 
+  }
+} */
+
+/* Зображення в promo-shipping */
+.promo-shipping__article {
+  background-image: url('img/playing_room.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.3125rem; /* 5px */
+}
