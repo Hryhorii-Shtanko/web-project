@@ -133,6 +133,20 @@
 padding-top: 15 px;
 padding-bottom: 30px;
 }
+.promo-offers__container {
+    display: flex;
+    justify-content: space-between; /* Простір між блоками */
+    align-items: center; /* Вирівнювання по вертикалі */
+    flex-wrap: wrap; /* Блоки переходять на новий ряд на маленьких екранах */
+}
+@media (min-width: 768px) {
+  .promo-shipping__article,
+  .promo-product-offer__aside {
+    width: 100%; /* Ширина 100%, щоб блоки стали один під одним */
+    margin: 0 0 10px 0; /* Відступ знизу, щоб блоки не "злипались" */
+  }
+
   .promo-offers__container {
     flex-direction: column; /* Вирівнюємо блоки один під одним */
   }
+}
