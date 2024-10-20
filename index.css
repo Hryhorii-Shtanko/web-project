@@ -147,3 +147,9 @@
         height: 488.766px;
     }
 }
+@media (min-width: 1800px) {
+    .promo-offers__container {
+
+        height: 411px;
+    }
+}
