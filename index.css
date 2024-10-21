@@ -21,7 +21,10 @@
   padding-top: 15px;
   padding-bottom: 30px;
 }
-
+.promo-shipping__article{
+  padding-left: 60px;/* new */
+  
+}
 .promo-offers h2 {
   font-size: 2.25rem; /* 36px */
   font-weight: bold;
@@ -39,7 +42,7 @@
   display: inline-block;
   vertical-align: top;
   width: 48%;
-  /*    height: 50vh; */
+     height: 50vh;/* new *//* new */
   height: auto; /* new */
 }
 .promo-shipping__article {
@@ -97,7 +100,7 @@
 }
 
 .promo-shipping__button:hover {
-  background-color: var(--btn-primary-alt-hover-bg-color);/* new */
+  background-color: var(--btn-primary-alt-hover-bg-color); /* new */
 }
 
 .promo-product-offer__button:hover {
@@ -114,7 +117,6 @@
 }
 
 .promo-product-offer__price {
-  /* promo-product-offer__new-price 128 */
   font-size: 1.4375rem; /* 23px */
   color: var(--secondary-background-color);
   font-weight: bold;
