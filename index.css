@@ -42,20 +42,20 @@
   width: 48%;
   height: auto; 
     /* height: 50vh;  */
-  padding-left: 60px; /* new */
-  padding: 0 10px; /* Додаємо невеликий внутрішній відступ для кращого вигляду */
-
+    padding: 0; 
+  padding-left: 60px;
+  margin: 0;
   box-sizing: border-box; /* Гарантує, що padding не виходить за межі ширини */
 
-
+/* */
 }
 .promo-shipping__article {
   background-image: url("images/playing_room.png");
   background-size: cover;
-  background-position: left center;
-  background-size: cover; /* Картинка займає весь блок */
+  background-position: left center;/* тільки для малих екранов*/
+  background-size: cover; 
   background-repeat: no-repeat;
-  border-radius: 0.3125rem; /* 5px */
+  border-radius: 0.3125rem; 
 }
 
 .promo-product-offer__aside {
