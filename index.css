@@ -39,6 +39,8 @@
   display: inline-block;
   vertical-align: top;
   width: 48%;
+/*    height: 50vh; */
+     height: auto; 
 }
 .promo-shipping__article {
   background-image: url("images/playing_room.png");
