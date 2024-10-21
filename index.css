@@ -147,7 +147,7 @@
         height: 488.766px;
     }
 }
-@media (min-width: 1800px) {
+/* @media (min-width: 1800px) {
     .promo-offers__container {
 
         height: 411px;
@@ -155,10 +155,10 @@
 }
 .promo-shipping__article, 
 .promo-product-offer__aside {
-    flex-basis: 48%; /* Кожен блок займатиме 48% ширини контейнера на великих екранах */
-    background-size: cover; /* Зображення займають весь блок без спотворень */
+    flex-basis: 48%; 
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 5px;
-    min-height: 400px; /* Мінімальна висота блоків */
-}
+    min-height: 400px; 
+} */
