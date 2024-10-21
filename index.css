@@ -21,10 +21,7 @@
   padding-top: 15px;
   padding-bottom: 30px;
 }
-.promo-shipping__article{
-  padding-left: 60px;/* new */
-  
-}
+
 .promo-offers h2 {
   font-size: 2.25rem; /* 36px */
   font-weight: bold;
@@ -36,16 +33,16 @@
   align-items: center; /* Вирівнювання по вертикалі */
   flex-wrap: wrap; /* Блоки переходять на новий ряд на маленьких екранах */
   flex-direction: column; /* Вирівнюємо блоки один під одним */
-  height: 50vh;/* new *//* new */
+  /*height: 50vh;  new */
 }
 .promo-shipping__article,
 .promo-product-offer__aside {
   display: inline-block;
   vertical-align: top;
   width: 48%;
+  height: auto; 
+  padding-left: 60px; /* new */
   
-  /* height: auto; new */
- 
 }
 .promo-shipping__article {
   background-image: url("images/playing_room.png");
