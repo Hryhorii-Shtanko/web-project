@@ -33,6 +33,7 @@
   align-items: center; /* Вирівнювання по вертикалі */
   flex-wrap: wrap; /* Блоки переходять на новий ряд на маленьких екранах */
   /* flex-direction: column;  */
+
 }
 .promo-shipping__article,
 .promo-product-offer__aside {
@@ -42,6 +43,10 @@
   height: auto; 
     /* height: 50vh;  */
   padding-left: 60px; /* new */
+  padding: 0 10px; /* Додаємо невеликий внутрішній відступ для кращого вигляду */
+
+  box-sizing: border-box; /* Гарантує, що padding не виходить за межі ширини */
+
 
 }
 .promo-shipping__article {
