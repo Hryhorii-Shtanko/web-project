@@ -36,14 +36,16 @@
   align-items: center; /* Вирівнювання по вертикалі */
   flex-wrap: wrap; /* Блоки переходять на новий ряд на маленьких екранах */
   flex-direction: column; /* Вирівнюємо блоки один під одним */
+  height: 50vh;/* new *//* new */
 }
 .promo-shipping__article,
 .promo-product-offer__aside {
   display: inline-block;
   vertical-align: top;
   width: 48%;
-     height: 50vh;/* new *//* new */
-  height: auto; /* new */
+  
+  /* height: auto; new */
+ 
 }
 .promo-shipping__article {
   background-image: url("images/playing_room.png");
