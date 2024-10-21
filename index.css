@@ -54,8 +54,7 @@
   height: auto;
   padding: 0;
   box-sizing: border-box;
-  background-size: contain;
-  overflow: hidden;
+  background-size: cover;
 }
 .promo-shipping__heading {
   color: var(--primary-text-color);
