@@ -33,13 +33,7 @@
   align-items: stretch;   /* new */
 }
 
-.promo-shipping__article,
-.promo-product-offer__aside {
-  width: 100%;
-  height: auto;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 .promo-shipping__article {
   background-image: url("images/playing_room.png");
@@ -54,7 +48,14 @@
   background-repeat: no-repeat;
   border-radius: 0.3125rem;
 }
-
+.promo-shipping__article,
+.promo-product-offer__aside {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: contain;
+}
 .promo-shipping__heading {
   color: var(--primary-text-color);
 }
