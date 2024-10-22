@@ -30,32 +30,30 @@
 .promo-offers__container {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;   /* new */
+  align-items: stretch; /* new */
 }
-
-
 
 .promo-shipping__article {
   background-image: url("images/playing_room.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   border-radius: 0.3125rem;
 }
 
 .promo-product-offer__aside {
   background-image: url("images/gray-haired-man-gaming.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   border-radius: 0.3125rem;
 }
-.promo-shipping__article,
+/* .promo-shipping__article,
 .promo-product-offer__aside {
   width: 100%;
   height: auto;
   padding: 0;
   box-sizing: border-box;
   background-size: cover;
-}
+} */
 .promo-shipping__heading {
   color: var(--primary-text-color);
 }
@@ -126,12 +124,24 @@
   color: var(--description-text-color);
 }
 
-
 /* Медіа-запити для адаптивності */
 /* @media (min-width: 600px) {
   .promo-offers__container {
     flex-direction: row;
     justify-content: space-around;
   }
-} */
+/////////////////////////////////////////////////////////////////////
+  
+  @media (min-width: 600px) {
+    .promo-offers__container {
+        display: flex; 
+        justify-content: space-between;
+    }
+}
 
+@media (min-width: 1200px) {
+    .promo-offers__container {
+        max-width: 1400px;
+}
+
+} */
