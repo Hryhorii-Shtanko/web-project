@@ -17,34 +17,32 @@
 }
 /* початок */
 
-.promo-offers {
-  padding-top: 15px;
-  padding-bottom: 30px;
-}
-
 .promo-offers h2 {
   font-size: 2.25rem;
   font-weight: bold;
 }
 
-.promo-offers__container {
+ .promo-offers__container {
   display: flex;
-  flex-wrap: wrap;
-  align-items: stretch; /* new */
-}
+  /* flex-wrap: wrap; */
+  /* align-items: stretch;  */
+  flex-direction: column;
+ } 
 
 .promo-shipping__article {
-  background-image: url("images/playing_room.png");
+  background-image: url("../images/playing_room.png");
   background-size: cover;
   /* background-repeat: no-repeat; */
   border-radius: 0.3125rem;
+  /* width: 915px; */ 
+  
 }
 
 .promo-product-offer__aside {
-  background-image: url("images/gray-haired-man-gaming.png");
+  background-image: url("../images/gray-haired-man-gaming.png");
   background-size: cover;
-  /* background-repeat: no-repeat; */
-  border-radius: 0.3125rem;
+  /* padding-left:  1%;
+  border-radius: 0.3125rem;   width: 49%; */
 }
 /* .promo-shipping__article,
 .promo-product-offer__aside {
@@ -123,6 +121,28 @@
   font-size: 0.938rem;
   color: var(--description-text-color);
 }
+/* 
+
+//27.10.24
+кожний контейнер має висоту, і ширину(щоб без пройоба):
+*/ 
+/* .promo-offers{
+  aspect-ratio: 2/1; 
+  }
+.promo-product-offer__aside {
+  width: 915px;
+  height: 412px;
+  border-radius: 0.3125rem;
+  box-sizing: border-box; 
+}
+  
+.promo-shipping__article {
+  width: 915px;
+  height: 411px;
+  border-radius: 0.3125rem;
+  box-sizing: border-box; 
+ }
+  */
 
 /* Медіа-запити для адаптивності */
 /* @media (min-width: 600px) {
