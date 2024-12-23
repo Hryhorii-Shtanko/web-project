@@ -1,8 +1,15 @@
 <header class="main-header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Brand</a>
-            <ul class="navbar-nav">
+<!--             <a class="navbar-brand" href="#">Brand</a> -->
+              <a href="#" class="logo">Brand</a>
+        <div class="burger-menu" onclick="toggleMenu()">☰</div>
+        <ul class="menu">
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+<!--             <ul class="navbar-nav"> 
                 <li class="nav-item">
                     <a class="nav-link" href="#">Каталог</a>
                 </li>
@@ -12,13 +19,13 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Ще
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+                    </a> -->
+<!--                     <ul class="dropdown-menu" aria-labelledby="moreDropdown">
                         <li><a class="dropdown-item" href="#">Оплата і доставка</a></li>
                         <li><a class="dropdown-item" href="#">Обмін та повернення</a></li>
                         <li><a class="dropdown-item" href="#">Дропшипінг</a></li>
-                    </ul>
-                </li>
+                    </ul> 
+                </li>-->
                 <li class="nav-item">
                     <a class="nav-link" href="#">Контакти</a>
                 </li>
@@ -26,3 +33,8 @@
         </div>
     </nav>
 </header>
+<script>
+  function toggleMenu() {
+      document.querySelector('.menu').classList.toggle('active');
+  }
+</script>
