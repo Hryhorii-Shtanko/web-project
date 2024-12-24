@@ -67,3 +67,7 @@
     transition: all 0.2s ease-out; 
 }
 
+.header_navicon:before { top: 7px;
+                      }
+.header_navicon:after { top: -7px; 
+                     }
