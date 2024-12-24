@@ -63,7 +63,7 @@
 .header_navicon::before,
 .header_navicon::after { 
     content: ''; width: 100%; height: 100%; display: block; position: absolute; background: 
-        var(--light-color);
+        var(--secondary-color);
     transition: all 0.2s ease-out; 
 }
 
