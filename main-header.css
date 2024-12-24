@@ -1,90 +1,62 @@
- .burger-menu {
-      display: none;
-      cursor: pointer;
-  }
-
-  .menu {
-      display: flex;
-  }
-
-  @media (max-width: 768px) {
-      .menu {
-          display: none;
-          flex-direction: column;
-      }
-
-      .menu.active {
-          display: flex;
-      }
-
-      .burger-menu {
-          display: block;
-      }
-  }
-/* main-header.css */
+/* Загальний стиль для header */
 .main-header {
-    background-color: var(--secondary-color);
-    border-bottom: 1px solid var(--border-color);
-    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8; /* Світлий фон */
+    border-bottom: 1px solid #ddd; /* Лінія під header */
 }
 
+/* Логотип */
 .logo {
-    font-size: 1.5rem;
-    color: var(--primary-text-color);
+    font-size: 24px;
+    font-weight: bold;
     text-decoration: none;
+    color: #333; /* Темний текст */
 }
 
+/* Бургер-меню */
+.burger-menu {
+    font-size: 24px;
+    display: none; /* Ховаємо бургер на великих екранах */
+    cursor: pointer;
+}
+
+/* Список меню */
 .menu {
-    display: flex;
-    gap: 15px;
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex; /* Розміщення в рядок */
+    gap: 15px; /* Відступи між пунктами */
 }
 
-.menu a {
+/* Пункти меню */
+.menu li a {
     text-decoration: none;
-    color: var(--text-color);
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
 }
 
-.menu a:hover {
-    background-color: var(--hover-bg-color);
-    color: var(--secondary-color);
-}
-
-.burger-menu {
-    display: none;
-    cursor: pointer;
-    font-size: 1.5rem;
-}
-
-.menu.active {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Адаптивність */
+/* Адаптивність: на малих екранах */
 @media (max-width: 768px) {
+    .burger-menu {
+        display: block; /* Показуємо бургер-меню */
+    }
     .menu {
-        display: none;
-        flex-direction: column;
-        background-color: var(--secondary-color);
+        display: none; /* Ховаємо меню за замовчуванням */
+        flex-direction: column; /* Розташування в стовпець */
+        gap: 10px;
+        background-color: #fff;
         position: absolute;
         top: 60px;
-        right: 15px;
-        padding: 15px;
-        border-radius: 5px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        right: 20px;
+        padding: 10px 20px;
+        border: 1px solid #ddd;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
-
-    .burger-menu {
-        display: block;
+    .menu.active {
+        display: flex; /* Показуємо меню, якщо клас active */
     }
 }
