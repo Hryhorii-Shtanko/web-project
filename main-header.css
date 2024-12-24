@@ -71,3 +71,30 @@
                       }
 .header_navicon:after { top: -7px; 
                      }
+
+.header.nav-visible .header_nav-menu {
+    top: 80px;
+}
+
+.header.nav-visible .header_background,
+.header.nav-visible .header_nav-menu {
+    background: var(--text-dark);
+}
+
+.header.nav-visible .header_navicon {
+    background: transparent;
+}
+
+.header.nav-visible .header_navicon::before {
+    transform: rotate(-45deg);
+}
+
+.header.nav-visible .header_navicon::after {
+    transform: rotate(45deg);
+}
+
+.header.nav-visible .header_navicon::before,
+.header.nav-visible .header_navicon::after {
+    top: 0;
+}
+
