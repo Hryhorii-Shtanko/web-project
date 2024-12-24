@@ -21,3 +21,70 @@
           display: block;
       }
   }
+/* main-header.css */
+.main-header {
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: var(--hover-bg-color);
+    color: var(--secondary-color);
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.menu.active {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: var(--secondary-color);
+        position: absolute;
+        top: 60px;
+        right: 15px;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
